@@ -13,3 +13,14 @@ describe('map', () => {
     expect(okei('map')(obj, value => value)).to.deep.equal(['korea', 'japan', 'thailand']);
   });
 });
+
+describe('Detect unsupported method', () => {
+  it('should detect unsupported method', () => {
+    const obj = {
+      korea: 'seoul',
+      japan: 'tokyo',
+      thailand: 'bangkok',
+    };
+    expect(() => okei('then')(obj, value => value)).to.throw(Error, 'then is not supported method. Please check method name again.');
+  });
+})
