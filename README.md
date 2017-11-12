@@ -1,4 +1,4 @@
-# okei
+# okei [![Build Status](https://travis-ci.org/wavejs/okei.svg?branch=master)](https://travis-ci.org/wavejs/okei)
 Object Iteration tool
 
 ## Usage
